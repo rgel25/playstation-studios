@@ -1,0 +1,100 @@
+.hulst-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0.625rem;
+  margin: auto;
+}
+
+.hulst-image {
+  padding: 1rem;
+  text-align: center;
+}
+
+.hulst-quote {
+  padding: 2rem;
+  text-align: center;
+  background-color: $off-white;
+  margin: 2rem auto;
+  border-radius: 0.625rem;
+  max-width: 500px;
+  font-size: 1.25rem;
+}
+
+figcaption {
+  font-size: 1rem;
+  font-weight: $font-700;
+  margin-bottom: 2rem;
+}
+
+.hulst-quote .studios-cta a {
+  color: $off-white;
+  text-decoration: none;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 0.25rem;
+  background-color: $ps-modern-blue;
+  transition: all ease 400ms;
+}
+
+.hulst-quote .studios-cta a:hover {
+  box-shadow: inset 300px 0 0 0 $off-white;
+  color: $off-black;
+  border-radius: 0rem;
+}
+
+@media screen and (max-width: 550px) {
+  .hulst-quote {
+    padding: 1rem;
+    margin: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .hulst-quote .studios-cta a {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  }
+}
+
+.hulst-quote .studios-cta a:hover {
+  box-shadow: inset 300px 0 0 0 $off-white;
+  color: $off-black;
+  border-radius: 0rem;
+}
+
+@media screen and (min-width: 992px) {
+  .studios-grid-container {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.9fr 0.4fr 1.7fr;
+    grid-template-rows: 2fr 1.2fr 0.8fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "hulst-image hulst-image ."
+      "hulst-image hulst-image ."
+      ". . .";
+    height: 90vh;
+    max-width: 800px;
+  }
+  .hulst-image {
+    grid-area: hulst-image;
+    background-image: url(/assets/images/hulst.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hulst-image img {
+    display: none;
+  }
+
+  .studios-cta {
+    margin-top: 3rem;
+  }
+  .hulst-quote {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    font-size: 1.2rem;
+  }
+}

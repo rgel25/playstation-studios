@@ -1,0 +1,54 @@
+.section1 {
+  background-color: #7dbcd4;
+}
+
+.section2 {
+  background-color: #98c19f;
+}
+
+.section3 {
+  background-color: #a199e2;
+}
+
+.section4 {
+  background-color: #cc938e;
+}
+
+.section5 {
+  background-color: #d2c598;
+}
+
+section div {
+  font-family: "Open Sans";
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+span {
+  font-size: 4em;
+  font-style: normal;
+  color: #fff;
+}
+
+.button {
+  background-color: #f2cf66;
+  border-bottom: 5px solid #d1b358;
+  text-shadow: 0px -2px #d1b358;
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.transition-fade {
+  transition: 10s;
+  opacity: 1;
+}
+
+html.is-animating {
+  opacity: 0;
+}
