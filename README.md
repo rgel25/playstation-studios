@@ -34,6 +34,16 @@ Concepts
 - Full page scroll ([fullPageScrollPureJS](https://www.cssscript.com/cross-platform-smooth-one-page-scrolling-pure-javascript/))
 - Parallax tilt on hover ([tiltJS](https://gijsroge.github.io/tilt.js/))
 
+Others
+
+- Git/Github for version control
+- Netlify for web hosting
+
+### Hosting
+
+Hosted on Netflify
+[https://argelmiralles-pss.netlify.app/](https://argelmiralles-pss.netlify.app/)
+
 ## Wireframe
 
 ![framework](https://i.ibb.co/0t35BgB/PSS.jpg)
