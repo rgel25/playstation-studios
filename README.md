@@ -10,7 +10,7 @@ The purposes and goal of this webpage are:
 - Showcase the PSS library
 - Give a glimpse of upcoming games in development by PSS
 
-Since I'm already quite efficient with HTML, CSS and Javascript, I took this opportunity to turn this project in to a small case study. In this study, I ask three main questions and I can honestly say that the answers I've found has helped me become a better web developer. If you're a beginner like me as well, I hope you pick up a few things from this project.
+Besides practicing my HTML and CSS knowledge, I'm also taking this opportunity to turn this project into a small case study. In this study, I ask three main questions and I can honestly say that the answers I've found has helped me become a better web developer. If you're a beginner like me as well, I hope you pick up a few things from this project.
 
 The problems :
 
