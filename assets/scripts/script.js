@@ -28,11 +28,16 @@ toNews.addEventListener("click", (e) => {
   }, 1800);
 });
 
+// Event when loading the page
 window.addEventListener("load", initializePage);
 function initializePage() {
+  // Determine the home page section the user is viewing
   if (window.location.href.includes("#") === true) {
+    // If the user is viewing is viewing any page besides the landing page
     document.querySelector(".overlay").classList.add("overlay-mute");
+    // Then hide the overlay section
     document.querySelector(".landing").classList.add("landing-show");
+    // And show the landing page and then initialize fullScroll
     new fullScroll({
       mainElement: "main",
       displayDots: true,
@@ -41,8 +46,11 @@ function initializePage() {
       animateFunction: "ease",
     });
   } else {
+    // If the user is viewing the landing page section, hide Nav bar
     document.getElementsByTagName("nav")[0].style.display = "none";
+    // Declare a utility variable that tells us if the whole animation has run - starts at false
     let hasRun = false;
+    // Apply an eventListener to the following window events
     [
       "wheel",
       "mousewheel",
@@ -53,7 +61,8 @@ function initializePage() {
     ].forEach(function (action) {
       window.addEventListener(action, exectuteOverlay, { once: true });
     });
-
+    // This is the function that fires upon the event above
+    // It executes the overlay animation (zoom) and then initializes fullScroll after 1 second
     function exectuteOverlay(e) {
       if (e.type == "keyup") {
         if (e.key != "ArrowDown") {
@@ -61,7 +70,6 @@ function initializePage() {
           return;
         }
       }
-      console.log("I will only fire once!");
       document.querySelector(".overlay").classList.add("overlay-animate");
       setTimeout(() => {
         new fullScroll({
