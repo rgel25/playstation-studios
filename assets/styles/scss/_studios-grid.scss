@@ -1,3 +1,8 @@
+.section4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hulst-image img {
   width: 100%;
   max-width: 500px;
@@ -15,6 +20,7 @@
   text-align: center;
   background-color: $off-white;
   margin: 2rem auto;
+  padding-top: 3rem;
   border-radius: 0.625rem;
   max-width: 500px;
   font-size: 1.25rem;
@@ -62,7 +68,6 @@ figcaption {
 
 @media screen and (min-width: 992px) {
   .studios-grid-container {
-    max-width: 80%;
     margin: auto;
     padding-top: 5rem;
     display: grid;
@@ -75,7 +80,8 @@ figcaption {
       "hulst-image hulst-image ."
       ". . .";
     height: 90vh;
-    max-width: 800px;
+    width: 90vw;
+    max-width: 1000px;
   }
   .hulst-image {
     grid-area: hulst-image;
@@ -83,6 +89,10 @@ figcaption {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  figcaption {
+    margin-bottom: 0;
   }
 
   .hulst-image img {
@@ -96,5 +106,10 @@ figcaption {
     grid-column: 2/4;
     grid-row: 2/4;
     font-size: 1.2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

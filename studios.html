@@ -8,19 +8,387 @@
     <link rel="stylesheet" href="./assets/styles/css/app.css" />
   </head>
   <body>
-    <div class="studios-container">
-      <div class="studios-card">
-        <h1>this is the studios page</h1>
-        <a id="link" href="./index.html#2">Go back</a>
+    <div class="transition">
+      <div class="cover-back cover1-back"></div>
+      <div class="cover-back cover2-back"></div>
+      <div class="cover-back cover3-back"></div>
+      <div class="cover-back cover4-back"></div>
+      <div class="cover-back cover5-back"></div>
+    </div>
+    <nav>
+      <span id="nav-open" class="studio-nav" onclick="openNav()">&#9776;</span>
+    </nav>
+    <div id="nav" class="nav-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="nav-overlay-content">
+        <a class="nav-link back-to-home" href="./index.html#3">Home</a>
       </div>
     </div>
-    <!-- <script src="./assets/scripts/script.js"></script> -->
-  </body>
-  <script>
-    // document.querySelector("#link").addEventListener("click", (e) => {
-    //   e.preventDefault();
-    //   window.location = this.href;
+    <div class="studios-container">
+      <div class="studios-header">
+        <h1>Our Studios</h1>
+      </div>
+      <div class="studios-area">
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img src="./assets/images/studios/naughtydog.webp" alt="" />
+          </div>
+          <div class="card-body">
+            <p>
+              The studio behind the best-selling and award-winning UNCHARTED and
+              The Last of Us franchises.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.naughtydog.com/"
+              >Visit Naughty Dog</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/santa-monica-studio-logo-01-08feb22 (2).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>The talented team behind the smash-hit God of War franchise.</p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://sms.playstation.com/"
+              >Visit Santa Monica Studio</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/insomniac-games-studio-logo-01-08feb22.webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              The collaborative developer behind Marvel’s Spider-Man and creator
+              of Ratchet & Clank.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://insomniac.games/"
+              >Visit Insomniac Games</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/guerrilla-games-studio-logo-01-08feb22.webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              The studio that brought the critically-acclaimed Horizon franchise
+              to life.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.guerrilla-games.com/"
+              >Visit Guerrilla Games</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/bluepoint-studio-logo-01-08feb22.webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              Austin-based studio behind critically-acclaimed remasters and
+              remakes, including The Nathan Drake Collection and Demon's Souls.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.bluepointgames.com/"
+              >Visit Bluepoint Games</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img src="./assets/images/studios/polyphony.webp" alt="" />
+          </div>
+          <div class="card-body">
+            <p>The racing sim veteran behind the Gran Turismo franchise.</p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.polyphony.co.jp/"
+              >Visit Polyphony Digital</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/bend-studio-logo-01-08feb22.webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              Creating games for over 25 years at the base of Oregon’s beautiful
+              Cascade Mountains.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.bendstudio.com/"
+              >Visit Bend Studio</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/london-studio-logo-01-08feb22.webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              Creating unique gaming experiences in the city’s creative hub.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://playstationlondonstudio.com/"
+              >Visit London Studio</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/firesprite-studio-logo-01-08feb22.webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              The UK-based video game studio with a history of developing
+              highly-polished showpieces for cutting-edge hardware.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.firesprite.com/"
+              >Visit Firesprite</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/housemarque-studio-logo-01-08feb22 (3).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>The studio behind mega hit Returnal.</p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://housemarque.com/"
+              >Visit Housemarque</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/media-molecule-studio-logo-01-08feb22 (3).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>The creative minds behind Dreams.</p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.mediamolecule.com/"
+              >Visit Media Molecule</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img src="./assets/images/studios/nixxes.webp" alt="" />
+          </div>
+          <div class="card-body">
+            <p>
+              The industry-leading Dutch studio with more than 20 years of
+              experience in game development and optimization.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.nixxes.com/">Visit Nixxes</a>
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/san-diego-studio-logo-01-08feb22 (3).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              The sporting behemoth that brings to life the hugely popular, MLB
+              The Show series.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://sonysandiegostudio.games/"
+              >Visit San Diego Studios</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/xdev-studio-logo-01-08feb22 (2).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              Collaborating with ambitious external studios across the globe.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.sonyxdeveurope.com/"
+              >Visit XDev Europe</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/pixel-opus-studio-logo-01-08feb22 (1).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              The small and innovative team behind the much-adored Concrete
+              Genie.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://twitter.com/pixelopus?lang=en"
+              >Visit Pixel Opus</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img src="./assets/images/studios/suckerpunch.webp" alt="" />
+          </div>
+          <div class="card-body">
+            <p>
+              The imaginative developer behind the award-winning Ghost of
+              Tsushima.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.suckerpunch.com/"
+              >Visit Sucker Punch</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/valkyrie-entertainment-studio-logo-01-08feb22 (3).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>
+              A well-respected studio known for producing high-quality work on a
+              range of platforms from console to PC.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://valkyrie-entertainment.com/"
+              >Visit Valkyrie Entertainment</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+        <!-- CARD - START -->
+        <div class="studio-card">
+          <div class="card-image">
+            <img
+              src="./assets/images/studios/team-asobi-studio-logo-01-08feb22 (2).webp"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <p>The team behind the PS5 exclusive Astro's Playroom.</p>
+          </div>
+          <div class="card-cta">
+            <a target="_blank" href="https://www.teamasobi.com/"
+              >Visit Team Asobi</a
+            >
+          </div>
+        </div>
+        <!-- CARD - END -->
+      </div>
+      <div class="page-cta">
+        <a id="link" class="back-to-home" href="./index.html#3"
+          ><div class="cross button">
+            <span class="tooltiptext">Go Back To Home</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
-    // });
-  </script>
+    <script src="./assets/scripts/nav.js"></script>
+    <script src="./assets/scripts/back-to-home.js"></script>
+  </body>
 </html>

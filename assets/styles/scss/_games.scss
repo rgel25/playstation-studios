@@ -21,9 +21,14 @@
   text-align: center;
 }
 
-.game-card {
+.games-container .game-card {
   margin-right: 0.5rem;
   margin-bottom: 0.25rem;
+  transition: 0.5s ease-in-out 0s;
+}
+
+.games-container .game-card:hover {
+  transform: scale(1.075);
 }
 
 .game-image {
@@ -46,15 +51,10 @@
   text-decoration: none;
 }
 
-.game-card {
-  transform: scale(1);
-  transition: all 2s easin;
-}
-
-.game-card:hover {
-  transform: scale(1.1);
-  transition: all 2s easin;
-}
+// .game-card img:hover {
+//   transform: scale(1.1);
+//   transition: all 2s easin;
+// }
 
 @media screen and (min-width: 500px) {
   .game-image {

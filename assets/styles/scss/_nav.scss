@@ -4,6 +4,7 @@ nav {
   left: 20px;
   z-index: 101;
   color: $off-white;
+  font-family: $font-heading;
 }
 
 #nav-open {
@@ -19,7 +20,7 @@ nav {
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: $off-black;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -28,14 +29,14 @@ nav {
   position: relative;
   top: 25%;
   width: 100%;
-  text-align: center;
+  margin-left: 2rem;
   margin-top: 30px;
 }
 
 .nav-overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 20px;
   color: $off-white;
   display: block;
   transition: 0.3s;
@@ -49,7 +50,7 @@ nav {
 
 .nav-overlay a:hover,
 .nav-overlay a:focus {
-  color: #f1f1f1;
+  color: $ps-modern-blue;
 }
 
 .nav-overlay .closebtn {
@@ -67,5 +68,16 @@ nav {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+.nav-show {
+  min-width: 250px;
+  width: 15%;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-show {
+    width: 50%;
   }
 }

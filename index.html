@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/styles/css/app.css" />
     <script src="https://kit.fontawesome.com/66c6b559ae.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="home">
     <nav>
       <span id="nav-open" onclick="openNav()">&#9776;</span>
     </nav>
@@ -22,6 +22,7 @@
         <a class="nav-link" href="#2">New and Upcoming</a>
         <a class="nav-link" href="#3">Studios</a>
         <a class="nav-link" href="#4">Games</a>
+        <a class="nav-link" href="#5">PS5</a>
       </div>
     </div>
     <div id="main" class="scroll-container">
@@ -32,7 +33,7 @@
         <div class="cover cover4"></div>
         <div class="cover cover5"></div>
       </div>
-      <div class="overlay"></div>
+      <div class="overlay" data-tilt></div>
 
       <section class="section1">
         <div>
@@ -79,7 +80,7 @@
         <div class="news-overlay">
           <div class="news-cta">
             <h2>New and upcoming releases</h2>
-            <a href="/">Learn More</a>
+            <a id="toNews" href="./news.html">Learn More</a>
           </div>
         </div>
         <div class="news-grid-container">
@@ -91,7 +92,7 @@
         </div>
       </section>
       <section class="section4">
-        <div>
+        
           <div class="studios-grid-container">
             <div class="hulst-image">
               <img src="./assets/images/hulst.webp" alt="">
@@ -102,13 +103,13 @@
                     <p>"PlayStation Studios is a creator-led organization. Our collective of studios and teams have built some of the most memorable gaming experiences imaginable. Together, we build worlds."</p>
                 </blockquote>
                 <figcaption>-Hermen Hulst<cite>, Head of PlayStation Studios</cite></figcaption>
-            </figure>
-            <div class="studios-cta">
-              <a id="toStudio" href="./studios.html">See our studios</a>
-            </div>
+              </figure>
+              <div class="studios-cta">
+                <a id="toStudio" href="./studios.html">See our studios</a>
+              </div>
             </div>
           </div>
-        </div>
+       
       </section>
       <section class="section5">
         <div class="games-header">
@@ -248,7 +249,26 @@
           </a>
         </div>
         <!-- GAME 1 - END -->
+       </div>
+      </section>
+      <section class="section6">
+        <div class="ps5-container">
+          <img src="./assets/images/ps5.png" alt="">
+          <div class="ps5-cta">
+            <img src="./assets/images/ps5logo.webp" alt="">
+            <a target="_blank" href="https://www.playstation.com/en-ph/ps5/">Get your PS5 Now</a>
+          </div>
         </div>
+        <footer>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a target="_blank" href="https://www.playstation.com/en-us/support/">Support</a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://www.playstation.com/en-us/legal/">Legal</a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://www.playstation.com/en-ph/legal/website-terms-of-use/">Terms</a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://www.playstation.com/en-ph/corporate/playstation-careers/">Careers</a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://www.playstation.com/en-ph/corporate/about-us/">SIE</a></li>
+        </ul>
+        <p class="copyright"><a href="https://github.com/rgel25">Argel Miralles</a> © 2022</p>
+        </footer>
       </section>
     </div>
     <script src="./assets/scripts/full-page-scroll.js"></script>
@@ -262,5 +282,7 @@
       });
     </script> -->
     <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/nav.js"></script>
+    <script type="text/javascript" src="/assets/scripts/vanilla-tilt.min.js"></script>
   </body>
 </html>

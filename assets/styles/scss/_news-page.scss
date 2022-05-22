@@ -1,0 +1,157 @@
+@import "transitions";
+
+.news-nav {
+  color: $off-white;
+}
+
+.news-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadein 2s forwards;
+}
+
+.god-of-war {
+  background: url(../../images/news/gownotext.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.horizon {
+  background: url(../../images/news/horizon.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gt {
+  background: url(../../images/news/gt.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uncharted {
+  background: url(../../images/news/uncharted.jfif);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mlb {
+  background: url(../../images/news/mlb.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-game-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+  opacity: 0;
+  -webkit-animation: fadein 1s forwards 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s forwards 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s forwards 1s; /* Internet Explorer */
+  -o-animation: fadein 1s forwards 1s; /* Opera < 12.1 */
+  animation: fadein 1s forwards 1s;
+}
+
+.news-card-upper {
+  max-width: 500px;
+}
+
+.news-card-lower {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.game-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: $font-heading;
+  font-weight: $font-700;
+}
+
+.game-publisher {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-console {
+  margin-bottom: 0.5rem;
+}
+
+.ps4,
+.ps5 {
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  background-color: $off-black;
+  color: $off-white;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.game-release-date {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.game-cta a {
+  color: $off-white;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  background-color: $ps-modern-blue;
+  border-radius: 0.25rem;
+  font-weight: $font-700;
+  transition: all ease 400ms;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.game-cta a:hover {
+  box-shadow: inset 300px 0 0 0 $off-white;
+  color: $off-black;
+  border-radius: 0rem;
+}
+
+@media screen and (min-width: 992px) {
+  .news-section {
+    display: block;
+  }
+  .news-game-card {
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 2rem;
+    margin-top: 5rem;
+  }
+
+  .responsive-iframe {
+    height: 60%;
+    top: 25%;
+  }
+}

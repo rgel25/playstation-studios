@@ -1,0 +1,165 @@
+@import "transitions";
+
+.studio-nav {
+  color: $off-black;
+}
+
+.studios-container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  //   height: 100vh;
+  //   width: 100vw;
+  background-color: $off-white;
+  background-image: url(../../images/studios-wallpaper.webp);
+  color: $off-black;
+  animation: fadein 2s forwards;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.studios-area {
+  opacity: 0;
+  -webkit-animation: fadein 1s forwards 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s forwards 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s forwards 1s; /* Internet Explorer */
+  -o-animation: fadein 1s forwards 1s; /* Opera < 12.1 */
+  animation: fadein 1s forwards 1s;
+}
+
+.studios-header {
+  text-align: center;
+}
+
+.studios-header h1 {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: $font-heading;
+  display: inline-block;
+  border-radius: 0.625rem;
+  text-transform: uppercase;
+}
+
+.studios-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.studio-card {
+  background-color: $card-bg;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 350px;
+  border-radius: 0.625rem;
+}
+
+.card-image {
+  text-align: center;
+}
+
+.card-image img {
+  max-width: 200px;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-cta {
+  text-align: center;
+  margin: 1rem;
+  justify-self: end;
+}
+
+.card-cta a {
+  color: $off-white;
+  text-decoration: none;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: $ps-modern-blue;
+  border-radius: 0.25rem;
+  font-weight: $font-700;
+  transition: all ease 400ms;
+  display: block;
+}
+
+.card-cta a:hover {
+  box-shadow: inset 300px 0 0 0 $off-white;
+  color: $off-black;
+  border-radius: 0rem;
+}
+
+.page-cta {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  //   box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.6);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(34, 34, 34, 1) 85%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: relative;
+}
+
+.cross {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:before,
+  &:after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: #9faad9;
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+
+  &:after {
+    transform: rotate(45deg);
+  }
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.button:hover .tooltiptext {
+  visibility: visible;
+}
