@@ -41,8 +41,8 @@ Others
 
 ### Hosting
 
-Hosted on Netflify
-[https://argelmiralles-pss.netlify.app/](https://argelmiralles-pss.netlify.app/)
+Hosted on Netflify <br>  
+<a target="_blank" href="https://argelmiralles-pss.netlify.app/">https://argelmiralles-pss.netlify.app/</a>
 
 ## Wireframe
 
